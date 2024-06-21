@@ -4,7 +4,7 @@ import javax.swing.*;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null, "Hello World");
+        /*JOptionPane.showMessageDialog(null, "Hello World");
         JOptionPane.showInputDialog("Ingrese su nombre");
 
         String primerNumero = JOptionPane.showInputDialog("Ingrese el primer numero");
@@ -26,7 +26,23 @@ public class Main {
         JOptionPane.showMessageDialog(null, "El suma es: " + suma, "Suma de dos entreros", JOptionPane.PLAIN_MESSAGE);
         JOptionPane.showMessageDialog(null,"La resta es:" + resta, "Resta de dos entreros", JOptionPane.PLAIN_MESSAGE);
         JOptionPane.showMessageDialog(null,"La multiplicacion es: "+ multiplicacion,"Multiplicacion de dos entreros", JOptionPane.PLAIN_MESSAGE);
-        JOptionPane.showMessageDialog(null,"La division es: "+ division,"Division de dos entreros", JOptionPane.PLAIN_MESSAGE);
+        JOptionPane.showMessageDialog(null,"La division es: "+ division,"Division de dos entreros", JOptionPane.PLAIN_MESSAGE);*/
+
+        //cLASE 02
+        //Coloccaion de un titulo en la creacion de un objeto
+        //instanciar el objeto
+        JFrame frame = new JFrame("Mi aplicacion");
+        //Varios elementos al setear el fram
+        //El setter recibe un objeto
+        frame.setContentPane(new Form1().mipanel);
+        //X = cerrar el programa
+        //error1
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //tamaño
+        frame.setSize(200,100);
+        frame.pack();
+        frame.setVisible(true);
+
 
     }
 }
